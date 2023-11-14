@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lab2": "ts-node lab2/euclideanAlgorithm.ts",
+    "lab3": "ts-node lab3/dijkstra.ts",
     "test": "jest"
   },
   "author": "",
