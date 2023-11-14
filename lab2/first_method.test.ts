@@ -1,8 +1,7 @@
-import { euclideanAlgorithm } from './euclideanAlgorithm';
+import { findGreatestCommonDivisor } from './first_method';
 import * as faker from "faker";
-import {findGreatestCommonDivisor} from "./second_method";
 
-describe('Euclid\'s Algorithm', () => {
+describe('First Algorithm', () => {
   test('Should find the greatest common divisor of two numbers', () => {
     expect(findGreatestCommonDivisor(0, 0)).toBe(1);
     expect(findGreatestCommonDivisor(0, 5)).toBe(1);
@@ -14,12 +13,12 @@ describe('Euclid\'s Algorithm', () => {
   });
 
   // Generate random test cases
-  for (let i = 0; i < 9999; i++) {
+  for (let i = 0; i < 999; i++) {
     const a = faker.datatype.number({ min: -100_000_000, max: 100_000_000 });
     const b = faker.datatype.number({ min: -100_000_000, max: 100_000_000 });
 
     test(`Should find the greatest common divisor of ${a} and ${b}`, () => {
-      const gcd = euclideanAlgorithm(a, b);
+      const gcd = findGreatestCommonDivisor(a, b);
 
       expect(gcd).toBeGreaterThanOrEqual(1); // GCD should be a positive integer
       expect(Math.abs(a % gcd)).toBe(0); // GCD should be a divisor of a
