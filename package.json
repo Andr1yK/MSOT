@@ -3,9 +3,15 @@
   "version": "1.0.0",
   "description": "```bash npm install ```",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "lab2": "ts-node lab2/euclideanAlgorithm.ts",
-    "lab3": "ts-node lab3/dijkstra.ts",
+    "lab2": "ts-node-esm lab2/euclideanAlgorithm.ts",
+    "lab3": "ts-node-esm lab3/dijkstra.ts",
+    "ct:hypotenuse": "ts-node-esm challengeTasks/hypotenuse.ts",
+    "ct:rabbits": "ts-node-esm challengeTasks/rabbits.ts",
+    "ct:oldHocusPocus": "ts-node-esm challengeTasks/old_hocus_pocus.ts",
+    "ct:sumOfDigits": "ts-node-esm challengeTasks/sum_of_digits.ts",
+    "ct:getChange": "ts-node-esm challengeTasks/get_change.ts",
     "test": "jest"
   },
   "author": "",

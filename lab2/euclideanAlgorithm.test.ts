@@ -1,16 +1,15 @@
 import { euclideanAlgorithm } from './euclideanAlgorithm';
 import * as faker from "faker";
-import {findGreatestCommonDivisor} from "./second_method";
 
 describe('Euclid\'s Algorithm', () => {
   test('Should find the greatest common divisor of two numbers', () => {
-    expect(findGreatestCommonDivisor(0, 0)).toBe(1);
-    expect(findGreatestCommonDivisor(0, 5)).toBe(1);
-    expect(findGreatestCommonDivisor(5, 0)).toBe(1);
-    expect(findGreatestCommonDivisor(5, 5)).toBe(5);
-    expect(findGreatestCommonDivisor(10, 5)).toBe(5);
-    expect(findGreatestCommonDivisor(14, 28)).toBe(14);
-    expect(findGreatestCommonDivisor(21, 14)).toBe(7);
+    expect(euclideanAlgorithm(0, 0)).toBe(1);
+    expect(euclideanAlgorithm(0, 5)).toBe(1);
+    expect(euclideanAlgorithm(5, 0)).toBe(1);
+    expect(euclideanAlgorithm(5, 5)).toBe(5);
+    expect(euclideanAlgorithm(10, 5)).toBe(5);
+    expect(euclideanAlgorithm(14, 28)).toBe(14);
+    expect(euclideanAlgorithm(21, 14)).toBe(7);
   });
 
   // Generate random test cases
