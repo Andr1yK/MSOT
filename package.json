@@ -5,7 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "lab2": "ts-node-esm lab2/euclideanAlgorithm.ts",
+    "lab2:euclideanAlgorithm": "ts-node-esm lab2/euclideanAlgorithm.ts",
+    "lab2:firstMethod": "ts-node-esm lab2/first_method.ts",
+    "lab2:secondMethod": "ts-node-esm lab2/second_method.ts",
     "lab3": "ts-node-esm lab3/dijkstra.ts",
     "ct:hypotenuse": "ts-node-esm challengeTasks/hypotenuse.ts",
     "ct:rabbits": "ts-node-esm challengeTasks/rabbits.ts",

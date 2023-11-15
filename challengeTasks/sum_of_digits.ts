@@ -1,5 +1,3 @@
-// return sum of each digit in num
-
 export const sumOfDigits = (num: number): number => {
   let sum = 0;
   let numStr = num.toString();

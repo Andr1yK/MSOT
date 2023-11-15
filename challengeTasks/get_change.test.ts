@@ -12,7 +12,6 @@ describe('Get change', () => {
     expect(changeCoins).toBe(50);
   });
 
-  // Generate random test cases
   for (let i = 0; i < 999; i++) {
     const priceUAH = faker.datatype.number({ min: 0, max: 100 });
     const priceCoins = faker.datatype.number({ min: 0, max: 99 });
