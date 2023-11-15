@@ -3,7 +3,7 @@ name: CI Template job
 on:
   pull_request:
     branches:
-      - master
+      - '*'
 
 jobs:
   test:
